@@ -22,6 +22,13 @@ useSeoMeta({
 
 useHead(() => ({
   htmlAttrs: localeHead.value.htmlAttrs,
+  script: [
+    {
+      defer: True,
+      src: 'https://data.herebuy.us/tracker.js',
+      'data-site-id': 'kina-men',
+    },
+  ],
   meta: [
     {
       name: 'viewport',
